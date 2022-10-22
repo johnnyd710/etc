@@ -1,1 +1,38 @@
-../notes/.vscode/settings.json
+{
+    "explorer.sortOrder": "modified",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.general.tags": [
+        "DOING",
+        "LATER",
+        "DONE",
+        "CANCELLED"
+    ],
+    "todo-tree.tree.labelFormat": "${after}",
+    "todo-tree.highlights.customHighlight": {
+        "DOING": {
+            "icon": "check",
+            "foreground": "white",
+            "background": "green",
+            "iconColour": "green"
+        },
+        "LATER": {
+            "foreground": "white",
+            "iconColour": "white",
+            "icon": "question",
+            "background": "red"
+        },
+        "DONE": {
+            "foreground": "black",
+            "iconColour": "white",
+            "icon": "check",
+            "background": "grey",
+            "hideFromTree": true
+        },
+        "CANCELLED": {
+            "hideFromTree": true,
+            "foreground": "black",
+            "background": "grey",
+        }
+    },
+    "todo-tree.tree.flat": true,
+}
